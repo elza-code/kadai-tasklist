@@ -4,7 +4,8 @@
 </h1>
 
 <p>
-  <%= @task.content %>
+  タスク:  <%= @task.content %> |
+  ステータス:  <%= @task.status %>
 </p>
 
 <%= link_to 'タスク一覧に戻る', tasks_path %>
