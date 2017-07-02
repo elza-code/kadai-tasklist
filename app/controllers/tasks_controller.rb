@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   
   
   def index
-    @tasks = Task.all
+     @tasks = Task.all.page(params[:page]).per(3)
   end
   
   def show
@@ -26,6 +26,7 @@ class TasksController < ApplicationController
   end
 
   def edit
+   
   end
   
   def update
