@@ -14,16 +14,13 @@
   <% end %>
   
   <div class="form-group">
-　　
-   　<%= f.label :status, 'ステータス' %>
-   　<%= f.text_field :status %>
+    <%= f.label :status, 'ステータス' %>
+    <%= f.text_field :status, class: 'form-control' %>
   </div>
 
-
   <div class="form-group">
-   　
-   　　<%= f.label :content, 'タスク' %>
-　　　<%= f.text_field :content %>
+    <%= f.label :content, 'タスク' %>
+    <%= f.text_field :content, class: 'form-control' %>
   </div>
    
   <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-pushpin"></span>タスク追加</button>
